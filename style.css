@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(file:///C:/Users/smirn/Desktop/Seline/Meus%20Sites/EEEP%20Jaime%20da%20Cunha%20Rebou%C3%A7as/img/bg02.png);
+       /* Faz a imagem ocupar toda a tela */
+    background-position: center;   /* Centraliza a imagem */
+   /* Impede que a imagem se repita */
+}
+header{
+    width: 200%;
+    height: 80px;
+    background-color: darkgreen;
+}
+/* Estilo da logo */
+.logo img {
+    max-height: 75px; /* Ajuste a altura da logo conforme necessário */
+    float: left;
+}
+#banner{
+    background-image: url(/img/banner.png);
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: contain; /* Ajusta a imagem para caber dentro da div sem cortar */
+    display: flex;
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    overflow: hidden;
+    height: 400px;
+    width: 100%; /* Garante que a largura do banner ocupe toda a tela */;
+}
+ul{
+    list-style: none;
+    display: flex;
+    color: seagreen;
+    margin: 15px 50px;
+}
+ul li{
+    position: relative;
+    margin-top: 10px;
+}
+ul li a{
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0,3s;
+}
+ul li a:hover{
+    border-radius: 20px;
+    background-color: forestgreen;
+    color: darkgray;
+}
+
+.topo{
+    position: fixed; /* Fixa o cabeçalho no topo */
+    z-index: 1000; /* Mantém sobre outros elementos */
+}
+h1{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+.evento-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px 10px; /* Espaço entre linhas e colunas */
+    padding: 20px;
+    margin-inline: 200px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.evento img {
+    margin: 10px;
+    width: 60%;
+    height:fit-content;
+    border-radius: 30px;
+}
+#sobre{
+    padding-top: 20px;
+}
+
+.sobre-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px 10px; /* Espaço entre linhas e colunas */
+    padding: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.sobre img {
+    margin: 20px;
+    margin-inline: 10px;
+    width: 45%;
+    height: fit-content;
+    border-radius: 30px;
+    box-shadow: 10px 7px 20px rgb(0, 0, 0);
+}
+.sobre1 img {
+    margin: 20px;
+    margin-inline: 10px;
+    width: 60%;
+    height: fit-content;
+    border-radius: 30px;
+    box-shadow: 10px 7px 20px rgb(0, 0, 0);
+}
+
+.sobre h2 {
+    text-align: left;
+}
+
+h1{
+    font-style: oblique;
+    color: white;
+}
+h2{
+    color: rgb(255, 255, 255);
+}
+b{
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+.container{
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.container img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid rgb(225, 225, 225);
+    transition: all ease-in-out 0.5s;
+}
+.container img:hover{
+    width: 30%;
+}
+
+#contato{
+    padding: 20px;
+    text-align: center;
+}
+
+form{
+    background-color: rgba(0, 126, 0, 0.568);
+    margin: auto;
+    padding: 50px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+}
+
+input, textarea{
+    width: 90%;
+    padding: 15px;
+    border: 1px;
+    border-radius: 50px;
+}
+
+button{
+    width: 20%;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(9, 92, 20);
+}
+button:hover{
+    background-color: rgb(9, 92, 20);
+    color: white;
+}
+footer p{
+    text-align: center;
+}
